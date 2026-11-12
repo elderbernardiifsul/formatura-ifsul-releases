@@ -2,9 +2,11 @@
 
 Programa para Windows 10 ou superior que organiza formaturas e aberturas de eventos do câmpus: cadastro e documentos em PDF e DOCX.
 
+**Manual de uso:** https://elderbernardiifsul.github.io/formatura-ifsul-releases/ — passo a passo com imagens, da instalação ao arquivamento. Cada release também traz o `Manual-FormaturaIFSul-X.Y.Z.html`, que abre sem internet.
+
 ## Instalar
 
-1. Em **Releases** (à direita), baixe o `FormaturaIFSul-Setup-X.Y.Z.exe` mais recente.
+1. Em **Releases** (à direita), baixe o `FormaturaIFSul-Setup-X.Y.Z.exe` mais recente. O [passo a passo com imagens](https://elderbernardiifsul.github.io/formatura-ifsul-releases/#instalar) mostra cada tela.
 2. Abra o arquivo. O instalador ainda não tem assinatura digital e pode mostrar o aviso **"O Windows protegeu o computador"**. Depois de confirmar que o arquivo veio deste repositório, use **Mais informações → Executar assim mesmo**.
 3. Não precisa de senha de administrador. O programa fica em `%LocalAppData%\Programs\Formatura IFSul`, com atalho no Menu Iniciar.
 
