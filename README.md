@@ -1,6 +1,6 @@
 # Formatura IFSul
 
-Programa para Windows 10 ou superior que organiza as cerimônias de formatura do câmpus: cadastro, protocolo, atas, termos, convite — em PDF e DOCX.
+Programa para Windows 10 ou superior que organiza formaturas e aberturas de eventos do câmpus: cadastro e documentos em PDF e DOCX.
 
 ## Instalar
 
@@ -12,7 +12,15 @@ Na primeira vez, o programa pede uma pasta de trabalho (sugere `Documentos\Forma
 
 ## Atualizar
 
-O programa avisa quando há versão nova e se atualiza sozinho com um clique. Os seus modelos, o cânone, o perfil e as formaturas ficam na pasta de trabalho e **não são alterados** por uma atualização.
+O programa avisa quando há versão nova e se atualiza com um clique. Modelos personalizados, perfil e cerimônias ficam preservados na pasta de trabalho. Ao abrir uma pasta antiga, o contrato de campos é atualizado com backup; novos tipos e modelos ausentes podem ser acrescentados sem substituir os personalizados.
+
+### Abertura de eventos na versão 0.1.3
+
+Em **Formaturas e eventos → Nova cerimônia**, escolha **Abertura de eventos**. Preencha identificação, mesa e pronunciamentos, programação e opções. O protocolo pode ser pré-visualizado e exportado em PDF e DOCX, sem cadastrar cursos, formandos ou juramento.
+
+A ordem das falas é independente da composição da mesa. Hinos, registro de presenças e declaração formal são opcionais. A próxima atividade pode começar imediatamente ou ser anunciada com horário e local após um intervalo. Confira o roteiro e o tempo dos atos antes do evento.
+
+Pastas de trabalho anteriores recebem o novo tipo e os arquivos ausentes automaticamente ao abrir. O registro anterior é preservado em `.bak`; modelos já personalizados não são substituídos.
 
 ### Aplicar as correções de textos da versão 0.1.2
 
