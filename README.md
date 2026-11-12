@@ -16,6 +16,10 @@ Na primeira vez, o programa pede uma pasta de trabalho (sugere `Documentos\Forma
 
 O programa avisa quando há versão nova e se atualiza com um clique. Modelos personalizados, perfil e cerimônias ficam preservados na pasta de trabalho. Ao abrir uma pasta antiga, o contrato de campos é atualizado com backup; novos tipos e modelos ausentes podem ser acrescentados sem substituir os personalizados.
 
+### Correções na versão 0.1.5
+
+Contagens no singular corrigidas ("1 documento", "1 formando"), telas do manual atualizadas e notas de atualização extraídas da tag anotada da release.
+
 ### Abertura de eventos na versão 0.1.3
 
 Em **Formaturas e eventos → Nova cerimônia**, escolha **Abertura de eventos**. Preencha identificação, mesa e pronunciamentos, programação e opções. O protocolo pode ser pré-visualizado e exportado em PDF e DOCX, sem cadastrar cursos, formandos ou juramento.
