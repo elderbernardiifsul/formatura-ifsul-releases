@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manual do Formatura IFSul</title>
+<meta name="description" content="Como instalar e usar o Formatura IFSul: do cadastro da cerimônia aos documentos prontos.">
+<link rel="stylesheet" href="manual.css">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<div class="pagina">
+  <aside class="lateral">
+    <div class="lateral__marca">
+      <span class="lateral__titulo">Formatura</span>
+      <span class="lateral__sub">IFSul · Manual</span>
+    </div>
+    <nav class="sumario" aria-label="Sumário">
+      <ol>
+        <li><a href="#comece"><span class="num">01</span> Comece por aqui</a></li>
+        <li><a href="#caminho"><span class="num">02</span> O caminho de uma cerimônia</a></li>
+        <li><a href="#instalar"><span class="num">03</span> Instalar no Windows</a></li>
+        <li><a href="#primeiro-uso"><span class="num">04</span> Primeiro uso</a></li>
+        <li><a href="#formaturas"><span class="num">05</span> Formaturas e eventos</a></li>
+        <li><a href="#ficha"><span class="num">06</span> A ficha da cerimônia</a></li>
+        <li><a href="#formandos"><span class="num">07</span> Formandos</a></li>
+        <li><a href="#documentos"><span class="num">08</span> Documentos</a></li>
+        <li><a href="#arquivar"><span class="num">09</span> Arquivar</a></li>
+        <li><a href="#campus"><span class="num">10</span> Meu câmpus</a></li>
+        <li><a href="#modelos"><span class="num">11</span> Modelos</a></li>
+        <li><a href="#canone"><span class="num">12</span> Cânone: juramentos e decisões</a></li>
+        <li><a href="#configuracoes"><span class="num">13</span> Configurações e atualizações</a></li>
+        <li><a href="#arquivos"><span class="num">14</span> Seus arquivos e backup</a></li>
+        <li><a href="#desinstalar"><span class="num">15</span> Desinstalar</a></li>
+        <li><a href="#duvidas"><span class="num">16</span> Dúvidas frequentes</a></li>
+      </ol>
+    </nav>
+    <div class="lateral__rodape">Manual da versão 0.1.5</div>
+  </aside>
+
+  <main id="conteudo" class="conteudo">
+    <header class="capa">
+      <p class="capa__sobre">Manual de uso</p>
+      <h1>Formatura IFSul</h1>
+      <p class="sub">Do cadastro da cerimônia aos documentos prontos para o palco, passo a passo.</p>
+      <div class="aviso aviso--dica">
+        <span class="aviso__titulo">Sobre as imagens</span>
+        <p>As telas deste manual usam dados fictícios. No seu computador aparecem os dados do seu câmpus. Clique em qualquer tela para vê-la maior.</p>
+      </div>
+    </header>
+
+    <section id="comece" class="secao-manual" aria-labelledby="comece-titulo">
+      <h2 id="comece-titulo"><span class="num">01</span> Comece por aqui</h2>
+      <p>O Formatura IFSul é um programa para Windows que organiza as cerimônias do câmpus. Você cadastra a cerimônia, preenche uma ficha e o programa monta os documentos: protocolo, atas, termos, falas e convite, em PDF e em DOCX.</p>
+      <div class="faz">
+        <div class="painel">
+          <h3>O que o programa faz</h3>
+          <ul>
+            <li>Guarda as formaturas e as aberturas de evento do câmpus, cada uma com sua ficha.</li>
+            <li>Recebe a lista de formandos colada do Excel ou importada de planilha.</li>
+            <li>Avisa o que falta preencher antes de gerar os documentos.</li>
+            <li>Gera os documentos com os nomes, os tratamentos e as concordâncias corretos.</li>
+            <li>Deixa você ajustar os <a href="#modelos">modelos</a> de texto do câmpus.</li>
+            <li>Avisa quando há versão nova e se atualiza com um clique.</li>
+          </ul>
+        </div>
+        <div class="painel">
+          <h3>O que o programa não faz</h3>
+          <ul>
+            <li>Não envia seus dados para a internet: tudo fica numa pasta do seu computador.</li>
+            <li>Não assina nem protocola documentos.</li>
+            <li>Não substitui a sua conferência: leia os documentos antes da cerimônia.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cartoes">
+        <a class="cartao" href="#instalar"><span class="cartao__titulo">Instalar no Windows</span><span class="cartao__texto">Baixe o instalador e abra o programa.</span></a>
+        <a class="cartao" href="#formaturas"><span class="cartao__titulo">Criar uma cerimônia</span><span class="cartao__texto">Cadastre a formatura ou a abertura de evento.</span></a>
+        <a class="cartao" href="#documentos"><span class="cartao__titulo">Gerar os documentos</span><span class="cartao__texto">Confira a ficha e exporte em PDF e DOCX.</span></a>
+        <a class="cartao" href="#duvidas"><span class="cartao__titulo">Dúvidas frequentes</span><span class="cartao__texto">Respostas rápidas para os problemas mais comuns.</span></a>
+      </div>
+    </section>
+
+    <section id="caminho" class="secao-manual" aria-labelledby="caminho-titulo">
+      <h2 id="caminho-titulo"><span class="num">02</span> O caminho de uma cerimônia</h2>
+      <p>Toda cerimônia segue o mesmo caminho, da primeira anotação até o arquivo guardado. Siga estes cinco passos na ordem e nada fica para trás.</p>
+      <ol class="passos">
+        <li><strong>Cadastrar</strong> Crie a formatura ou a abertura de evento na tela <strong>Formaturas e eventos</strong>. Veja a seção <a href="#formaturas">Formaturas e eventos</a>.</li>
+        <li><strong>Preencher a ficha</strong> Responda às perguntas da cerimônia: data, local, mesa, programação. Veja a seção <a href="#ficha">A ficha da cerimônia</a>.</li>
+        <li><strong>Incluir os formandos</strong> Cole ou importe a lista de formandos. A abertura de evento não tem formandos: nesse tipo, siga direto para o passo seguinte. Veja a seção <a href="#formandos">Formandos</a>.</li>
+        <li><strong>Gerar os documentos</strong> Confira o que falta, escolha os documentos e exporte em PDF e DOCX. Veja a seção <a href="#documentos">Documentos</a>.</li>
+        <li><strong>Arquivar</strong> Depois da cerimônia, arquive a ficha para guardá-la só para leitura. Veja a seção <a href="#arquivar">Arquivar</a>.</li>
+      </ol>
+      <div class="aviso aviso--dica">
+        <span class="aviso__titulo">Dica</span>
+        <p>Você não precisa salvar a ficha: o programa grava sozinho enquanto você digita. Os detalhes estão na seção <a href="#ficha">A ficha da cerimônia</a>.</p>
+      </div>
+    </section>
+
+    <section id="instalar" class="secao-manual" aria-labelledby="instalar-titulo">
+      <h2 id="instalar-titulo"><span class="num">03</span> Instalar no Windows</h2>
+      <h3>O que você precisa</h3>
+      <ul>
+        <li>Windows 10 ou superior.</li>
+        <li>Nenhuma senha de administrador: a instalação é só para o seu usuário.</li>
+        <li>Internet para baixar o instalador e, depois, para receber as atualizações.</li>
+      </ul>
+
+      <h3>Passo a passo</h3>
+      <ol class="passos">
+        <li><strong>Baixe o instalador</strong> Abra <a href="https://github.com/elderbernardiifsul/formatura-ifsul-releases/releases/latest">github.com/elderbernardiifsul/formatura-ifsul-releases/releases/latest</a>. Na lista <strong>Assets</strong> (a lista de arquivos no fim da página), clique em <code>FormaturaIFSul-Setup-X.Y.Z.exe</code> (no lugar de X.Y.Z aparece o número da versão).</li>
+        <li><strong>Abra o arquivo baixado</strong> Dê dois cliques nele, na pasta Downloads ou na barra de downloads do navegador.</li>
+        <li><strong>Passe pelo aviso do Windows</strong> Se aparecer <strong>O Windows protegeu o computador</strong>, clique em <strong>Mais informações</strong> e depois em <strong>Executar assim mesmo</strong>.</li>
+      </ol>
+
+      <div class="janela-win janela-win--smartscreen" role="img" aria-label="Ilustração do aviso O Windows protegeu o computador, com o link Mais informações e o botão Executar assim mesmo destacados">
+        <div class="janela-win__corpo">
+          <h4>O Windows protegeu o computador</h4>
+          <p>O Microsoft Defender SmartScreen impediu a inicialização de um aplicativo não reconhecido. A execução desse aplicativo pode colocar seu computador em risco.</p>
+          <p><a class="realce">Mais informações</a></p>
+          <p>Aplicativo: FormaturaIFSul-Setup-X.Y.Z.exe<br>Fornecedor: Fornecedor desconhecido</p>
+        </div>
+        <div class="janela-win__rodape">
+          <span class="botao-win realce">Executar assim mesmo</span>
+          <span class="botao-win">Não executar</span>
+        </div>
+      </div>
+      <p class="ilustracao-nota">Ilustração. O texto exato muda conforme a versão do Windows. O botão <strong>Executar assim mesmo</strong> só aparece depois de clicar em <strong>Mais informações</strong>.</p>
+
+      <div class="aviso aviso--atencao">
+        <span class="aviso__titulo">Atenção</span>
+        <p>O instalador ainda não tem assinatura digital, por isso o Windows desconfia dele. Só execute se você o baixou do endereço acima.</p>
+      </div>
+
+      <ol class="passos" style="counter-reset: passo 3">
+        <li><strong>Siga o assistente</strong> Leia cada tela, aceite a pasta sugerida e clique em <strong>Avançar</strong>. Na tela <strong>Pronto para Instalar</strong>, clique em <strong>Instalar</strong>. Quando terminar, clique em <strong>Concluir</strong>.</li>
+        <li><strong>Abra o programa</strong> No Menu Iniciar, procure <strong>Formatura IFSul</strong> e clique nele.</li>
+      </ol>
+
+      <div class="janela-win" role="img" aria-label="Ilustração do assistente de instalação, na tela Pronto para Instalar, com os botões Voltar, Instalar e Cancelar">
+        <div class="janela-win__barra"><span>Instalar - Formatura IFSul</span><span>✕</span></div>
+        <div class="janela-win__corpo">
+          <h4>Pronto para Instalar</h4>
+          <p>O Instalador está pronto para começar a instalação do Formatura IFSul no seu computador.</p>
+          <p>Clique em Instalar para continuar com a instalação, ou clique em Voltar se você quiser revisar ou alterar alguma configuração.</p>
+          <p>Pasta de destino:<br>C:\Users\maria\AppData\Local\Programs\Formatura IFSul</p>
+        </div>
+        <div class="janela-win__rodape">
+          <span class="botao-win">&lt; Voltar</span>
+          <span class="botao-win botao-win--primario realce">Instalar</span>
+          <span class="botao-win">Cancelar</span>
+        </div>
+      </div>
+      <p class="ilustracao-nota">Ilustração. Antes desta tela, o assistente mostra a boas-vindas e a escolha da pasta de destino. Não há escolha de grupo do Menu Iniciar.</p>
+
+      <h3>Componente da Microsoft</h3>
+      <p>O programa precisa do Microsoft Edge WebView2 Runtime, que a maioria dos computadores com Windows 10 e 11 já tem. Se o seu não tiver, o instalador o instala sozinho e mostra a mensagem <strong>Instalando o Microsoft Edge WebView2 Runtime…</strong>. Nesse momento o computador precisa estar com internet. Aguarde, sem fechar a janela.</p>
+
+      <h3>Onde o programa fica</h3>
+      <p>O programa é instalado em <code>%LocalAppData%\Programs\Formatura IFSul</code> e ganha um atalho no Menu Iniciar.</p>
+      <div class="aviso aviso--dica">
+        <span class="aviso__titulo">Dica</span>
+        <p>Os seus dados não ficam nessa pasta. Formaturas, modelos e perfil do câmpus ficam na pasta de trabalho, que você escolhe no primeiro uso. Por isso atualizar ou reinstalar o programa não apaga nada. Veja a seção <a href="#arquivos">Seus arquivos e backup</a>.</p>
+      </div>
+    </section>
+
+    <section id="primeiro-uso" class="secao-manual" aria-labelledby="primeiro-uso-titulo">
+      <h2 id="primeiro-uso-titulo"><span class="num">04</span> Primeiro uso</h2>
+      <p>Na primeira vez que você abre o programa, ele pede duas coisas: onde guardar o trabalho e quem são as autoridades do câmpus. Enquanto não terminar, o menu lateral fica desativado (em cinza) e não dá para abrir as outras telas.</p>
+
+      <h3>Escolher a pasta de trabalho</h3>
+      <figure class="captura">
+        <button class="captura__ampliar" type="button" aria-label="Ampliar: tela Bem-vindo ao Formatura IFSul, escolha da pasta de trabalho">
+          <img src="img/01-boas-vindas-pasta.png" alt="Tela Bem-vindo ao Formatura IFSul com o campo Pasta de trabalho preenchido com C:\Users\maria\Documents\Formaturas IFSul e os botões Procurar e Continuar" width="1280" height="800" loading="lazy">
+          <span class="marcador" style="--x:72%;--y:28%">1</span>
+          <span class="marcador" style="--x:86%;--y:28%">2</span>
+          <span class="marcador" style="--x:43.5%;--y:37.5%">3</span>
+        </button>
+        <figcaption>
+          <ol class="legenda">
+            <li><strong>Pasta de trabalho</strong> — o programa já sugere <code>Documentos\Formaturas IFSul</code>. Você pode aceitar ou digitar outro caminho.</li>
+            <li><strong>Procurar…</strong> — abre a janela do Windows para você escolher a pasta com o mouse.</li>
+            <li><strong>Continuar</strong> — confirma a pasta. Se ela não existir, o programa a cria.</li>
+          </ol>
+        </figcaption>
+      </figure>
+      <p>Se a pasta já foi usada pelo programa, ele abre direto, sem mais perguntas. Se ela tiver outros arquivos e não for do programa, ele avisa e pede uma pasta vazia.</p>
+
+      <h3>Dizer quem é o câmpus</h3>
+      <p>Se a pasta é nova, aparece a tela <strong>Seu câmpus</strong>. O que você preencher vira o padrão de toda cerimônia nova.</p>
+      <figure class="captura">
+        <button class="captura__ampliar" type="button" aria-label="Ampliar: tela Seu câmpus, perfil do câmpus">
+          <img src="img/02-boas-vindas-perfil.png" alt="Tela Seu câmpus com os campos Câmpus, Diretor-Geral, Chefe do DEPEX, Quem responde pela CORAC e Reitor preenchidos com nomes de exemplo, botões de gênero M e F e o botão Criar pasta de trabalho" width="1280" height="800" loading="lazy">
+          <span class="marcador" style="--x:80%;--y:36.5%">1</span>
+          <span class="marcador" style="--x:56%;--y:47%">2</span>
+          <span class="marcador" style="--x:68.5%;--y:47%">3</span>
+          <span class="marcador" style="--x:52%;--y:82.5%">4</span>
+        </button>
+        <figcaption>
+          <ol class="legenda">
+            <li><strong>Câmpus</strong> — o nome do câmpus sem a palavra “Câmpus”. Escreva <em>Bagé</em>, não <em>Câmpus Bagé</em>.</li>
+            <li><strong>Nomes das autoridades</strong> — Diretor-Geral, Chefe do DEPEX, quem responde pela CORAC e Reitor, com o nome completo.</li>
+            <li><strong>Gênero</strong> — clique em <strong>M</strong> ou <strong>F</strong> para o Diretor-Geral e para o Chefe do DEPEX. O programa usa isso para flexionar os documentos (por exemplo, Diretor-Geral ou Diretora-Geral).</li>
+            <li><strong>Criar pasta de trabalho</strong> — grava o perfil e abre o programa.</li>
+          </ol>
+        </figcaption>
+      </figure>
+      <p>Todos os campos são obrigatórios. Se faltar algum, aparece a mensagem <strong>Falta preencher</strong>, seguida do nome do campo (por exemplo, <em>Falta preencher: Gênero do Diretor-Geral</em>). Preencha e clique de novo em <strong>Criar pasta de trabalho</strong>.</p>
+      <p>Errou algo? Não tem problema: tudo isso pode ser alterado depois em <a href="#campus"><strong>Meu câmpus</strong></a>.</p>
+
+      <div class="aviso aviso--dica">
+        <span class="aviso__titulo">Dica</span>
+        <p>Na rede da instituição, a pasta de trabalho pode ficar numa unidade compartilhada. Se a unidade de rede estiver fora do ar ou a pasta tiver sido movida, o programa mostra a tela <strong>A pasta de trabalho não abriu</strong>. A solução está em <a href="#duvidas">Dúvidas frequentes</a>.</p>
+      </div>
+    </section>
+
+    <section id="formaturas" class="secao-manual" aria-labelledby="formaturas-titulo">
+      <h2 id="formaturas-titulo"><span class="num">05</span> Formaturas e eventos</h2>
+      <p>É a tela inicial do programa. Cada cerimônia em aberto aparece como um cartão.</p>
+      <figure class="captura">
+        <button class="captura__ampliar" type="button" aria-label="Ampliar: tela Formaturas e eventos">
+          <img src="img/03-formaturas.png" alt="Tela Formaturas e eventos com cinco cerimônias de exemplo em cartões, todas com a situação Liberada para gerar" width="1280" height="800" loading="lazy">
+          <span class="marcador" style="--x:98%;--y:3.8%">1</span>
+          <span class="marcador" style="--x:43.5%;--y:21%">2</span>
+          <span class="marcador" style="--x:34.7%;--y:25.6%">3</span>
+          <span class="marcador" style="--x:85.6%;--y:4%">4</span>
+        </button>
+        <figcaption>
+          <ol class="legenda">
+            <li><strong>Nova cerimônia</strong> — começa o cadastro de uma formatura ou de uma abertura de evento.</li>
+            <li><strong>Cartão da cerimônia</strong> — mostra o tipo, a data, o nome da pasta e os cursos com o número de formandos. Clique nele para abrir a ficha.</li>
+            <li><strong>Situação</strong> — a frase em cor no pé do cartão diz em que ponto a cerimônia está.</li>
+            <li><strong>Arquivadas</strong> — abre a lista das cerimônias já arquivadas.</li>
+          </ol>
+        </figcaption>
+      </figure>
+
+      <h3>As situações de um cartão</h3>
+      <ul>
+        <li><strong>N pendências</strong> (ou <strong>1 pendência</strong>) — faltam respostas obrigatórias na ficha. Os documentos ainda não podem ser gerados.</li>
+        <li><strong>Liberada para gerar</strong> — a ficha está completa e nenhum documento foi gerado ainda.</li>
+        <li><strong>Rascunho gerado</strong> — os documentos já foram gerados, mas ainda têm trechos <strong>⟨FALTA⟩</strong>. Não leve para a cerimônia.</li>
+        <li><strong>Documentos desatualizados</strong> — a ficha mudou depois da última geração. Gere de novo.</li>
+        <li><strong>Documentos em dia</strong> — os documentos gerados correspondem à ficha atual.</li>
+        <li><strong>Não consegui ler esta formatura</strong> — o arquivo da cerimônia está com problema. O cartão mostra a mensagem de erro e, ao clicar nele, o programa abre a pasta para você corrigir o <code>formatura.json</code>.</li>
+      </ul>
+      <p>As cerimônias arquivadas saem desta tela e vão para <strong>Arquivadas</strong>. Veja a seção <a href="#arquivar">Arquivar</a>.</p>
+
+      <h3>Criar uma cerimônia</h3>
+      <p>Clique em <strong>Nova cerimônia</strong>. Escolha o tipo e preencha os campos de <strong>Para batizar a pasta</strong>: o programa monta o nome da pasta com o que você digitar.</p>
+      <figure class="captura">
+        <button class="captura__ampliar" type="button" aria-label="Ampliar: tela Nova cerimônia">
+          <img src="img/04-nova-cerimonia.png" alt="Tela Nova cerimônia com o tipo Técnico selecionado, data 11/01/2027, siglas TMEC, local Auditorio e o nome da pasta 11.01.27-TMEC-Auditorio" width="1280" height="800" loading="lazy">
+          <span class="marcador" style="--x:68.7%;--y:21.6%">1</span>
+          <span class="marcador" style="--x:32.7%;--y:74.6%">2</span>
+          <span class="marcador" style="--x:59%;--y:74.6%">3</span>
+          <span class="marcador" style="--x:83.75%;--y:74.6%">4</span>
+          <span class="marcador" style="--x:34.3%;--y:93.25%">5</span>
+        </button>
+        <figcaption>
+          <ol class="legenda">
+            <li><strong>Tipo de cerimônia</strong> — clique no cartão do tipo. O escolhido fica com a borda verde.</li>
+            <li><strong>Data da cerimônia</strong> — digite no formato DD/MM/AAAA ou use o calendário.</li>
+            <li><strong>Siglas dos cursos</strong> — separe por vírgula; um curso é criado para cada sigla.</li>
+            <li><strong>Local</strong> — serve só para o nome da pasta. O local da cerimônia vem do perfil do câmpus e pode ser alterado na ficha.</li>
+            <li><strong>Criar formatura</strong> — fica desativado (em cinza) até tipo, data, siglas e local estarem preenchidos. Ao clicar, o programa cria a pasta e abre a ficha.</li>
+          </ol>
+        </figcaption>
+      </figure>
+      <p>Os cinco tipos são:</p>
+      <ul>
+        <li><strong>Gabinete (simples)</strong> — cerimônia simples, sem hinos e sem paraninfo; o Diretor-Geral confere o grau.</li>
+        <li><strong>Técnico (subsequente)</strong> — cursos técnicos subsequentes; hinos, homenageados, paraninfo entrega o certificado.</li>
+        <li><strong>Graduação (bacharelado/engenharia)</strong> — bacharelado e engenharia; a Reitoria confere o grau formando a formando.</li>
+        <li><strong>Ensino Médio Integrado</strong> — Termo de Habilitação com base legal própria.</li>
+        <li><strong>Abertura de eventos</strong> — abertura de congressos, seminários e outros eventos, com mesa e pronunciamentos opcionais.</li>
+      </ul>
+
+      <h3>Abertura de evento</h3>
+      <p>Ao escolher <strong>Abertura de eventos</strong>, a tela passa a se chamar <strong>Novo evento</strong>. O campo das siglas vira <strong>Nome do evento</strong> e o botão vira <strong>Criar evento</strong>.</p>
+      <figure class="captura">
+        <button class="captura__ampliar" type="button" aria-label="Ampliar: tela Novo evento">
+          <img src="img/05-novo-evento.png" alt="Tela Novo evento com o cartão Abertura de eventos selecionado, o formulário vazio e o botão Criar evento desativado" width="1280" height="800" loading="lazy">
+          <span class="marcador" style="--x:68.7%;--y:42.75%">1</span>
+          <span class="marcador" style="--x:69.1%;--y:74.6%">2</span>
+          <span class="marcador" style="--x:34.5%;--y:93.25%">3</span>
+        </button>
+        <figcaption>
+          <ol class="legenda">
+            <li><strong>Abertura de eventos</strong> — o cartão selecionado muda a tela para o cadastro de evento.</li>
+            <li><strong>Nome do evento</strong> — inclua a edição quando houver. O nome será levado à ficha.</li>
+            <li><strong>Criar evento</strong> — continua desativado (em cinza) enquanto faltar tipo, data, nome ou local.</li>
+          </ol>
+        </figcaption>
+      </figure>
+      <p>Uma abertura de evento não tem cursos nem formandos. Na ficha, a aba <strong>Mesa e falas</strong> tem duas listas com ordens independentes: a <strong>Mesa de honra</strong>, na ordem de chamada, e os <strong>Pronunciamentos</strong>, na ordem de fala.</p>
+    </section>
+
+    <section id="ficha" class="secao-manual" aria-labelledby="ficha-titulo">
+      <h2 id="ficha-titulo"><span class="num">06</span> A ficha da cerimônia</h2>
+      <p>A ficha reúne todas as respostas de que o programa precisa para montar os documentos. As abas ficam à esquerda, o formulário no meio e as pendências da aba atual à direita.</p>
+      <figure class="captura">
+        <button class="captura__ampliar" type="button" aria-label="Ampliar: ficha da cerimônia, aba Cerimônia">
+          <img src="img/06-ficha.png" alt="Ficha 12.12.26-TMSI-Auditorio na aba Cerimônia, com o indicador Salvo, o botão Voltar e campos obrigatórios marcados com asterisco vermelho" width="1280" height="800" loading="lazy">
+          <span class="marcador" style="--x:43.7%;--y:5.9%">1</span>
+          <span class="marcador" style="--x:33.5%;--y:15.6%">2</span>
+          <span class="marcador" style="--x:63%;--y:29.6%">3</span>
+          <span class="marcador" style="--x:86.3%;--y:7.1%">4</span>
+          <span class="marcador" style="--x:98.5%;--y:4.5%">5</span>
+        </button>
+        <figcaption>
+          <ol class="legenda">
+            <li><strong>Título</strong> — o nome da pasta da cerimônia. Abaixo dele aparecem o tipo e a data.</li>
+            <li><strong>Abas</strong> — dividem a ficha por assunto. Numa formatura são Cerimônia, Autoridades, Cursos, Logística, Particularidades e Documentos.</li>
+            <li><strong>Campo obrigatório</strong> — o asterisco vermelho <strong>*</strong> marca o que é obrigatório para gerar.</li>
+            <li><strong>Salvo</strong> — mostra que tudo o que você digitou já está gravado.</li>
+            <li><strong>Voltar</strong> — leva de volta à tela <strong>Formaturas e eventos</strong>.</li>
+          </ol>
+        </figcaption>
+      </figure>
+
+      <h3>O programa salva sozinho</h3>
+      <p>Meio segundo depois da última alteração o programa grava a ficha. O indicador no alto passa por <strong>Alterado…</strong>, <strong>Salvando…</strong> e termina em <strong>Salvo</strong>. Se aparecer <strong>Não salvo</strong>, a gravação falhou: confira se a pasta de trabalho continua acessível.</p>
+      <p>Ao clicar em <strong>Voltar</strong>, em outro item do menu ou na aba <strong>Documentos</strong>, o programa grava o que estiver pendente antes de seguir. Se a gravação falhar, você continua na ficha e vê o aviso de erro.</p>
+      <div class="aviso aviso--dica">
+        <span class="aviso__titulo">Dica</span>
+        <p>Só as telas <a href="#campus"><strong>Meu câmpus</strong></a> e <a href="#modelos"><strong>Modelos</strong></a> (e o <a href="#canone">editor do cânone</a>) pedem confirmação com <strong>Alterações não salvas</strong>. Na ficha não há botão Salvar, porque ela grava sozinha.</p>
+      </div>
+
+      <h3>Pendências</h3>
+      <p>Quando falta uma resposta obrigatória, o campo ganha uma marca vermelha com a explicação e a aba mostra um número vermelho com a quantidade de pendências. A coluna da direita lista as da aba aberta, sob o título <strong>Pendências desta aba (N)</strong>. Se não houver nenhuma, aparece <strong>Nada pendente nesta aba</strong>.</p>
+      <p>Clique numa pendência para o programa abrir a aba certa, rolar até o campo e destacá-lo.</p>
+      <p>Alguns campos vazios são só avisos: não bloqueiam a geração, mas saem como <strong>⟨FALTA⟩</strong> no documento.</p>
+    </section>
+
+    <section id="formandos" class="secao-manual" aria-labelledby="formandos-titulo">
+      <h2 id="formandos-titulo"><span class="num">07</span> Formandos</h2>
+      <p>Os formandos ficam na aba <strong>Cursos</strong>, numa grade, um curso de cada vez. A abertura de evento não tem formandos.</p>
+      <figure class="captura">
+        <button class="captura__ampliar" type="button" aria-label="Ampliar: aba Cursos, grade de formandos">
+          <img src="img/07-formandos.png" alt="Aba Cursos rolada até a grade Formandos, com a aba de curso INFO, o botão Adicionar curso, os botões Adicionar formando, Ordenar por nome e Importar planilha e duas linhas de formandos" width="1280" height="800" loading="lazy">
+          <span class="marcador" style="--x:38.7%;--y:3.5%">1</span>
+          <span class="marcador" style="--x:53.5%;--y:6.4%">2</span>
+          <span class="marcador" style="--x:65.6%;--y:75%">3</span>
+          <span class="marcador" style="--x:59%;--y:60.4%">4</span>
+          <span class="marcador" style="--x:46.5%;--y:60.4%">5</span>
+          <span class="marcador" style="--x:60.6%;--y:68.2%">6</span>
+          <span class="marcador" style="--x:47.2%;--y:86.1%">7</span>
+        </button>
+        <figcaption>
+          <ol class="legenda">
+            <li><strong>Aba do curso</strong> — cada curso tem a sua aba, com a sigla. Clique para trocar de curso.</li>
+            <li><strong>+ Adicionar curso</strong> — cria mais um curso na cerimônia.</li>
+            <li><strong>A grade</strong> — uma linha por formando, com Nome, Gênero, Presente, Pais, Cidade e Música. Clique numa célula e digite. A tecla Enter passa para a célula seguinte.</li>
+            <li><strong>Importar planilha…</strong> — lê os formandos de um arquivo de planilha.</li>
+            <li><strong>Ordenar por nome</strong> — põe a lista em ordem alfabética.</li>
+            <li><strong>Gênero</strong> — os botões <strong>M</strong> e <strong>F</strong> de cada formando.</li>
+            <li><strong>Remover este curso</strong> — apaga o curso. Leia o aviso mais abaixo.</li>
+          </ol>
+        </figcaption>
+      </figure>
+      <p>Use <strong>Adicionar formando</strong> para criar uma linha vazia e o <strong>✕</strong> no fim da linha para removê-la. Desmarque <strong>Presente</strong> se o formando não vai comparecer à cerimônia.</p>
+
+      <h3>Colar do Excel</h3>
+      <p>É o jeito mais rápido de incluir a turma toda.</p>
+      <ol class="passos">
+        <li><strong>Selecione as colunas</strong> No Excel (ou no LibreOffice), selecione as células com os dados dos formandos.</li>
+        <li><strong>Copie</strong> Pressione <kbd>Ctrl</kbd>+<kbd>C</kbd>.</li>
+        <li><strong>Clique na grade</strong> Volte ao programa e clique numa célula da grade de formandos.</li>
+        <li><strong>Cole</strong> Pressione <kbd>Ctrl</kbd>+<kbd>V</kbd>. Um texto de uma única célula cola normalmente; para a lista funcionar, copie pelo menos duas linhas ou duas colunas.</li>
+        <li><strong>Mapeie as colunas</strong> Se a primeira linha não tiver títulos reconhecíveis, abre a janela <strong>Mapear colunas</strong>. Em cada coluna, escolha o que ela é: Nome, Gênero, Presente, Pais, Cidade ou Música. Deixe <strong>— ignorar —</strong> nas colunas que não interessam.</li>
+        <li><strong>Indique o Nome</strong> Uma coluna precisa ser o <strong>Nome</strong>. Sem ela, o programa avisa <strong>Indique qual coluna é o Nome.</strong> Marque <strong>A primeira linha é cabeçalho (não importar)</strong> se for o caso e clique em <strong>Importar</strong>.</li>
+      </ol>
+      <p>Se a primeira linha tiver títulos como <em>Nome</em>, <em>Nome completo</em> ou <em>Formando</em>, o programa reconhece as colunas sozinho e pula a janela. Os formandos entram no fim da lista; linhas sem nome são ignoradas.</p>
+
+      <h3>Importar planilha .xlsx</h3>
+      <p>Clique em <strong>Importar planilha…</strong>, escolha o arquivo na janela do Windows e confirme. O programa aceita arquivos .xlsx, .xlsm, .csv, .tsv e .txt. Depois ele segue o mesmo caminho da colagem: reconhece os títulos ou abre <strong>Mapear colunas</strong>.</p>
+
+      <h3>Conferir o gênero</h3>
+      <p>O programa sugere o gênero de cada formando pelo prenome. Enquanto você não confirma, a sugestão aparece em cinza, como <strong>M?</strong> ou <strong>F?</strong>, e não é gravada na ficha. Clique na sugestão para confirmá-la, ou escolha <strong>M</strong> ou <strong>F</strong> você mesmo.</p>
+      <p>Quando há sugestões em cinza, aparece o botão <strong>Confirmar N sugestões de gênero</strong>. Ele confirma de uma vez só as que estão em cinza e não mexe nas que você já escolheu. Confira os nomes antes de clicar: um prenome pode enganar.</p>
+      <div class="aviso aviso--cuidado">
+        <span class="aviso__titulo">Cuidado</span>
+        <p>O botão <strong>Remover este curso</strong> abre a pergunta <strong>Remover curso</strong> e, se você confirmar com <strong>Remover</strong>, apaga também todos os formandos do curso. Confira o número que o programa mostra antes de confirmar.</p>
+      </div>
+    </section>
+
+    <section id="documentos" class="secao-manual" aria-labelledby="documentos-titulo">
+      <h2 id="documentos-titulo"><span class="num">08</span> Documentos</h2>
+      <p>A última aba da ficha é <strong>Documentos</strong>. Ao abri-la, o programa grava a ficha e confere se está tudo pronto.</p>
+
+      <h3>Quando faltam respostas</h3>
+      <figure class="captura">
+        <button class="captura__ampliar" type="button" aria-label="Ampliar: aba Documentos com 15 pendências">
+          <img src="img/10-documentos-pendencias.png" alt="Aba Documentos com o título 15 pendências impedem a geração, uma lista de pendências em vermelho e números vermelhos nas abas Cerimônia, Autoridades e Cursos" width="1280" height="800" loading="lazy">
+          <span class="marcador" style="--x:62.5%;--y:16.75%">1</span>
+          <span class="marcador" style="--x:93.7%;--y:22.6%">2</span>
+          <span class="marcador" style="--x:33.1%;--y:27.1%">3</span>
+        </button>
+        <figcaption>
+          <ol class="legenda">
+            <li><strong>15 pendências impedem a geração</strong> — o título diz quantas faltam.</li>
+            <li><strong>Lista de pendências</strong> — cada item diz qual pergunta falta responder e onde. Clique nele para ir direto ao campo.</li>
+            <li><strong>Números vermelhos</strong> — mostram quantas pendências há em cada aba.</li>
+          </ol>
+        </figcaption>
+      </figure>
+      <p>Enquanto houver pendências, o botão <strong>Gerar documentos</strong>, mais abaixo, fica desativado (em cinza). Ao passar o mouse sobre ele, aparece <strong>Resolva as pendências acima</strong>. Resolva cada item da lista e o título muda para <strong>Liberada para gerar</strong>.</p>
+
+      <h3>Gerar</h3>
+      <figure class="captura">
+        <button class="captura__ampliar" type="button" aria-label="Ampliar: aba Documentos liberada para gerar">
+          <img src="img/08-documentos-liberada.png" alt="Aba Documentos com o título Liberada para gerar, os botões Gerar documentos e Gerar rascunho e a lista de documentos, todos com a marca ainda não gerado" width="1280" height="800" loading="lazy">
+          <span class="marcador" style="--x:48.5%;--y:21%">1</span>
+          <span class="marcador" style="--x:59.6%;--y:21%">2</span>
+        </button>
+        <figcaption>
+          <ol class="legenda">
+            <li><strong>Gerar documentos</strong> — monta todos os documentos do tipo da cerimônia a partir da ficha.</li>
+            <li><strong>Gerar rascunho</strong> — gera mesmo com pendências, para você ter uma prévia.</li>
+          </ol>
+        </figcaption>
+      </figure>
+      <p>Cada linha da lista é um documento do tipo da cerimônia. Antes da geração, a linha diz <strong>ainda não gerado</strong>; depois, <strong>gerado</strong>.</p>
+      <p>Um <strong>rascunho</strong> mostra no alto da aba a faixa <strong>RASCUNHO — não leve para a cerimônia</strong>. Os campos que faltam saem como <strong>⟨FALTA⟩</strong> no texto, e a lista indica quantos há em cada documento. O cartão da cerimônia fica com <strong>Rascunho gerado</strong>.</p>
+
+      <h3>Conferir e exportar</h3>
+      <figure class="captura">
+        <button class="captura__ampliar" type="button" aria-label="Ampliar: aba Documentos com os documentos em dia">
+          <img src="img/09-documentos-em-dia.png" alt="Aba Documentos depois da geração, com a etiqueta Documentos em dia ao lado dos botões de gerar e cada documento marcado como gerado" width="1280" height="800" loading="lazy">
+          <span class="marcador" style="--x:72%;--y:21%">1</span>
+          <span class="marcador" style="--x:85.7%;--y:35.9%">2</span>
+        </button>
+        <figcaption>
+          <ol class="legenda">
+            <li><strong>Documentos em dia</strong> — os documentos gerados correspondem à ficha. Se você alterar a ficha depois, a etiqueta passa a <strong>Documentos desatualizados em relação à ficha</strong>. Gere de novo.</li>
+            <li><strong>Pré-visualizar</strong> — mostra o documento na própria tela, com <strong>Fechar</strong> para voltar. Se houver trechos faltando, uma etiqueta vermelha conta os <strong>⟨FALTA⟩</strong>.</li>
+          </ol>
+        </figcaption>
+      </figure>
+      <p>Mais abaixo, na seção <strong>Exportar</strong>, estão os botões <strong>PDF + DOCX</strong>, <strong>Só PDF</strong> e <strong>Só DOCX</strong>. Eles ficam desativados (em cinza) até você gerar os documentos. Uma barra mostra o andamento e, no fim, o programa avisa <strong>Exportação concluída.</strong> Se a ficha mudou desde a geração, o programa pergunta em <strong>Documentos desatualizados</strong> se quer <strong>Gerar e exportar</strong>.</p>
+      <p>Os arquivos exportados aparecem em lista, cada um com o botão <strong>Abrir</strong>. O botão <strong>Abrir pasta</strong> abre a pasta no Windows. Ela fica em <code>saida\&lt;nome da cerimônia&gt;</code>, dentro da pasta de trabalho.</p>
+      <div class="aviso aviso--atencao">
+        <span class="aviso__titulo">Atenção</span>
+        <p>O programa monta os documentos, mas quem responde por eles é você. Leia tudo antes da cerimônia: nomes, graus e falas.</p>
+      </div>
+    </section>
+
+    <section id="arquivar" class="secao-manual" aria-labelledby="arquivar-titulo">
+      <h2 id="arquivar-titulo"><span class="num">09</span> Arquivar</h2>
+      <p>Depois da cerimônia, arquive a ficha. Ela sai da lista de abertas e os documentos ficam guardados como registro do que foi lido no palco.</p>
+      <p>Na aba <strong>Documentos</strong>, no fim, a seção <strong>Depois da cerimônia</strong> tem o botão <strong>Arquivar formatura</strong>. Ele só funciona depois da data da cerimônia. Antes disso fica desativado (em cinza) e o programa explica: <strong>Habilita quando a data da cerimônia já passou.</strong></p>
+      <figure class="captura">
+        <button class="captura__ampliar" type="button" aria-label="Ampliar: confirmação Arquivar formatura">
+          <img src="img/11-arquivar-confirmar.png" alt="Janela Arquivar formatura com a explicação, a lista Antes de imprimir, confira e os botões Cancelar e Arquivar" width="1280" height="800" loading="lazy">
+          <span class="marcador" style="--x:76.8%;--y:31%">1</span>
+          <span class="marcador" style="--x:46.9%;--y:38.1%">2</span>
+          <span class="marcador" style="--x:65.2%;--y:68.5%">3</span>
+          <span class="marcador" style="--x:72.7%;--y:68.5%">4</span>
+        </button>
+        <figcaption>
+          <ol class="legenda">
+            <li><strong>Explicação</strong> — depois de arquivada, a formatura sai das abertas e os documentos ficam congelados como registro.</li>
+            <li><strong>Antes de imprimir, confira</strong> — a lista de verificação final. Use-a antes de imprimir os documentos.</li>
+            <li><strong>Cancelar</strong> — fecha a janela sem arquivar.</li>
+            <li><strong>Arquivar</strong> — conclui o arquivamento e volta para <strong>Formaturas e eventos</strong>.</li>
+          </ol>
+        </figcaption>
+      </figure>
+
+      <h3>O que muda depois de arquivar</h3>
+      <ul>
+        <li>A ficha passa a abrir só para leitura: o indicador mostra <strong>Arquivada — só leitura</strong> e os campos não aceitam alterações.</li>
+        <li>Os documentos não se regeneram. Eles são o registro do que foi lido no palco, e a aba <strong>Documentos</strong> deixa de ter os botões de gerar e exportar.</li>
+        <li>As pastas vão para <code>formaturas\arquivo</code> e <code>saida\arquivo</code>, dentro da pasta de trabalho. Os arquivos em <code>saida\arquivo</code> são os que foram impressos.</li>
+      </ul>
+
+      <h3>Ver uma cerimônia arquivada</h3>
+      <p>Na tela <strong>Formaturas e eventos</strong>, clique em <strong>Arquivadas</strong>.</p>
+      <figure class="captura">
+        <button class="captura__ampliar" type="button" aria-label="Ampliar: tela Arquivadas">
+          <img src="img/12-arquivadas.png" alt="Tela Arquivadas com uma cerimônia arquivada e os botões Ver ficha e Abrir pasta" width="1280" height="800" loading="lazy">
+          <span class="marcador" style="--x:86.7%;--y:18.75%">1</span>
+          <span class="marcador" style="--x:93.1%;--y:18.75%">2</span>
+        </button>
+        <figcaption>
+          <ol class="legenda">
+            <li><strong>Ver ficha</strong> — abre a ficha arquivada, só para leitura.</li>
+            <li><strong>Abrir pasta</strong> — abre a pasta da cerimônia arquivada no Windows.</li>
+          </ol>
+        </figcaption>
+      </figure>
+      <p>Cerimônias feitas no formato antigo aparecem aqui como <strong>Legado (formato antigo, só leitura)</strong>, só com o botão <strong>Abrir pasta</strong>. Use <strong>Voltar</strong> para retornar à lista.</p>
+    </section>
+
+    <section id="campus" class="secao-manual" aria-labelledby="campus-titulo">
+      <h2 id="campus-titulo"><span class="num">10</span> Meu câmpus</h2>
+      <p>Aqui ficam os dados do câmpus: nome, setor, logo, autoridades e os valores que toda cerimônia nova já traz preenchidos. Você preencheu parte disso no <a href="#primeiro-uso">primeiro uso</a>. Abra <strong>Meu câmpus</strong> no menu lateral para mudar.</p>
+      <figure class="captura">
+        <button class="captura__ampliar" type="button" aria-label="Ampliar: tela Meu câmpus">
+          <img src="img/13-campus.png" alt="Tela Meu câmpus com o aviso azul, o painel Identidade com o câmpus Exemplo, o setor Gabinete da Direção-Geral e o logo do IFSul com o botão Trocar logo, e o início do painel Padrões de uma formatura nova" width="1280" height="800" loading="lazy">
+          <span class="marcador" style="--x:83.5%;--y:6.1%">1</span>
+          <span class="marcador" style="--x:96.2%;--y:14%">2</span>
+          <span class="marcador" style="--x:40.5%;--y:34.6%">3</span>
+          <span class="marcador" style="--x:58.5%;--y:47%">4</span>
+          <span class="marcador" style="--x:45%;--y:73.1%">5</span>
+        </button>
+        <figcaption>
+          <ol class="legenda">
+            <li><strong>Salvar perfil</strong> — grava o que você mudou. Ao lado, o indicador diz <strong>Salvo</strong> ou <strong>Alterações não salvas</strong>.</li>
+            <li><strong>Aviso azul</strong> — lembra que o perfil vale para as cerimônias novas. As que já existem não mudam.</li>
+            <li><strong>Identidade</strong> — o nome do câmpus, sem a palavra “Câmpus”, e o setor que assina o rodapé dos documentos.</li>
+            <li><strong>Trocar logo…</strong> — escolhe o logo do câmpus, em PNG. Ele entra nos documentos no lugar do logo atual.</li>
+            <li><strong>Padrões de uma formatura nova</strong> — os valores que toda cerimônia nova já traz na ficha. Mais abaixo na tela estão também os nomes e o gênero das autoridades.</li>
+          </ol>
+        </figcaption>
+      </figure>
+
+      <h3>Como mudar o perfil</h3>
+      <ol class="passos">
+        <li><strong>Edite os campos</strong> Mude o que precisar. O brasão e a logomarca do IFSul são fixos e não podem ser trocados.</li>
+        <li><strong>Salve</strong> Clique em <strong>Salvar perfil</strong>. O programa mostra <strong>Perfil salvo. Vale para formaturas novas.</strong> Se algum campo obrigatório estiver vazio, aparece um aviso de erro e nada é gravado.</li>
+      </ol>
+      <p>Aqui o programa não salva sozinho. Se você tentar sair com mudanças ainda não salvas, aparece <strong>Alterações não salvas</strong>, com três botões: <strong>Continuar editando</strong>, <strong>Sair sem salvar</strong> e <strong>Salvar e sair</strong>.</p>
+
+      <div class="aviso aviso--atencao">
+        <span class="aviso__titulo">Atenção</span>
+        <p>Mudar o perfil não altera as cerimônias que você já criou. Cada ficha registra os dados que tinha ao ser criada, inclusive quem era o diretor naquele dia. Para mudar uma cerimônia antiga, altere a ficha dela.</p>
+      </div>
+      <p>Em <strong>Padrões de uma formatura nova</strong>, campo vazio quer dizer sem padrão. A ficha de cada cerimônia pode mudar qualquer um desses valores.</p>
+      <div class="aviso aviso--dica">
+        <span class="aviso__titulo">Dica</span>
+        <p>Ao trocar o logo, o programa guarda o anterior ao lado, num arquivo com a terminação <code>.bak</code>, dentro da pasta <code>marca</code>. A troca só aceita arquivo PNG.</p>
+      </div>
+    </section>
+
+    <section id="modelos" class="secao-manual" aria-labelledby="modelos-titulo">
+      <h2 id="modelos-titulo"><span class="num">11</span> Modelos</h2>
+      <p>Cada documento que o programa gera nasce de um modelo de texto. Em <strong>Modelos</strong> você lê, ajusta e cria esses modelos. Se o texto padrão serve para o seu câmpus, você não precisa mexer aqui.</p>
+      <figure class="captura">
+        <button class="captura__ampliar" type="button" aria-label="Ampliar: tela Modelos">
+          <img src="img/14-modelos.png" alt="Tela Modelos com a aba Todos selecionada, os botões Restaurar tipos e ordem padrão e Novo documento e a lista de documentos checklist.md, convite_oficial.html e fala_depex.md, todos com a situação Pronto para gerar e os botões Editar e Restaurar padrão" width="1280" height="800" loading="lazy">
+          <span class="marcador" style="--x:98%;--y:3.5%">1</span>
+          <span class="marcador" style="--x:44%;--y:26.5%">2</span>
+          <span class="marcador" style="--x:22.5%;--y:33%">3</span>
+          <span class="marcador" style="--x:33.3%;--y:39.5%">4</span>
+          <span class="marcador" style="--x:86.5%;--y:33.5%">5</span>
+        </button>
+        <figcaption>
+          <ol class="legenda">
+            <li><strong>Novo documento</strong> — cria um documento novo. Você dá um nome e escolhe em quais tipos de cerimônia ele entra.</li>
+            <li><strong>Filtro por tipo</strong> — <strong>Todos</strong> mostra tudo. Um tipo, como <strong>Técnico (subsequente)</strong>, mostra só os documentos dele, na ordem em que são gerados.</li>
+            <li><strong>Documento da lista</strong> — o nome do arquivo e, ao lado, os tipos de cerimônia em que ele entra.</li>
+            <li><strong>Situação</strong> — <strong>Pronto para gerar</strong>, quando está tudo certo, ou <strong>Com problemas — não será gerado</strong>, com o motivo.</li>
+            <li><strong>Editar</strong> — abre o documento no editor.</li>
+          </ol>
+        </figcaption>
+      </figure>
+      <p>Na lista, <strong>Restaurar padrão</strong> aparece nos documentos que vieram com o programa. Com um tipo escolhido no filtro, os botões ↑ e ↓ mudam a ordem dos documentos daquele tipo. <strong>Restaurar tipos e ordem padrão</strong>, no alto da tela, volta a lista de documentos de cada tipo ao padrão do programa.</p>
+
+      <h3>O editor de um documento</h3>
+      <p>Clique em <strong>Editar</strong>. O editor tem três colunas: as variáveis à esquerda, o texto no meio e a pré-visualização à direita.</p>
+      <figure class="captura">
+        <button class="captura__ampliar" type="button" aria-label="Ampliar: editor do documento checklist.md">
+          <img src="img/15-editor.png" alt="Editor do documento checklist.md com a lista de variáveis à esquerda, o texto do modelo no meio com as variáveis destacadas e a pré-visualização do checklist da formatura 12.12.26-TMSI-Auditorio à direita" width="1280" height="800" loading="lazy">
+          <span class="marcador" style="--x:93.3%;--y:4.3%">1</span>
+          <span class="marcador" style="--x:75.5%;--y:10%">2</span>
+          <span class="marcador" style="--x:36.4%;--y:21.4%">3</span>
+          <span class="marcador" style="--x:47%;--y:15.5%">4</span>
+          <span class="marcador" style="--x:54.7%;--y:15.5%">5</span>
+          <span class="marcador" style="--x:97.2%;--y:21%">6</span>
+          <span class="marcador" style="--x:54.7%;--y:41.25%">7</span>
+        </button>
+        <figcaption>
+          <ol class="legenda">
+            <li><strong>Restaurar padrão</strong> — volta este documento ao texto que veio com o programa.</li>
+            <li><strong>Salvar</strong> — grava o modelo e confere se ele está certo. O atalho é <kbd>Ctrl</kbd>+<kbd>S</kbd>.</li>
+            <li><strong>Procurar variável…</strong> — filtra a lista de variáveis. Clique numa variável para inseri-la no texto, na posição do cursor.</li>
+            <li><strong>Repetir por…</strong> — repete o trecho selecionado, uma vez para cada item de uma lista.</li>
+            <li><strong>Se… / Senão</strong> — mostra o trecho selecionado só quando um campo da ficha estiver preenchido.</li>
+            <li><strong>Pré-visualizar com os dados de:</strong> — escolhe com que cerimônia a prévia é montada: uma formatura aberta ou um exemplo com dados fictícios.</li>
+            <li><strong>Área de texto</strong> — o texto do modelo. As variáveis aparecem destacadas em verde.</li>
+          </ol>
+        </figcaption>
+      </figure>
+      <p>Abaixo do nome do documento, <strong>Entra em:</strong> mostra os tipos de cerimônia que usam o documento. Clique num tipo para pôr ou tirar o documento dele. A pré-visualização se atualiza sozinha, meio segundo depois de você parar de digitar.</p>
+
+      <h3>Variáveis: o que vai entre chaves</h3>
+      <p>Uma variável é um espaço que o programa preenche com um dado da ficha. Ela se escreve entre chaves duplas, como <code>{{CAMPUS}}</code>. Ao gerar o documento, o programa troca <code>{{CAMPUS}}</code> pelo nome do câmpus.</p>
+      <ul>
+        <li>Para inserir uma variável, clique nela na lista da esquerda. Cada uma traz uma explicação curta.</li>
+        <li>Variável desativada (em cinza) na lista não vale onde está o cursor. Ela só funciona dentro de um <strong>Repetir por…</strong> do tipo certo.</li>
+        <li>Quando um dado está vazio na ficha, ou a variável não existe, o documento sai com <strong>⟨FALTA⟩</strong> no lugar. A pré-visualização conta esses casos numa etiqueta vermelha, como <strong>2 campos em falta</strong>.</li>
+      </ul>
+
+      <h3>Repetir por…</h3>
+      <p>Use quando um trecho precisa se repetir, como um bloco para cada curso. Selecione o trecho, clique em <strong>Repetir por…</strong>, escolha o que se repete (por exemplo, <em>CURSO — cada curso da cerimônia</em>) e clique em <strong>Inserir</strong>. O programa envolve o trecho com <code>&lt;!-- REPETIR POR CURSO --&gt;</code> e <code>&lt;!-- FIM REPETIR --&gt;</code>. As opções desativadas (em cinza) na janela só valem dentro de outro <strong>Repetir por…</strong>.</p>
+
+      <h3>Se… / Senão</h3>
+      <p>Use quando um trecho só faz sentido em certos casos, como a presença do Reitor. Selecione o trecho, clique em <strong>Se… / Senão</strong>, escolha o campo e clique em <strong>Inserir</strong>. O trecho só aparece quando esse campo está preenchido. O que você escrever depois de <code>&lt;!-- SENAO --&gt;</code> aparece quando ele está vazio.</p>
+
+      <h3>Salvar e conferir</h3>
+      <p>Clique em <strong>Salvar</strong>. O programa grava o modelo e confere se ele está certo. Se estiver, aparece <strong>Salvo.</strong> Se não, aparece <strong>Salvo, mas com 2 problemas — este documento não será gerado até corrigir.</strong> e, abaixo do texto, a lista <strong>N problemas encontrados ao salvar</strong>. Clique num problema para ir à linha dele. Um <strong>Repetir por…</strong> ou um <strong>Se…</strong> sem o seu fim é avisado na hora, antes de salvar.</p>
+      <p>Se você tentar sair com o texto sem salvar, o programa pergunta em <strong>Alterações não salvas</strong>.</p>
+
+      <h3>Restaurar o padrão</h3>
+      <p>Errou ou quer o texto original de volta? Clique em <strong>Restaurar padrão</strong>, na lista ou no editor. O programa abre uma comparação: as linhas em vermelho (−) são as de hoje e as linhas em verde (+) são as do padrão. Se você confirmar com <strong>Restaurar</strong>, o arquivo de hoje fica guardado ao lado, com a terminação <code>.bak</code>. Se o documento já for igual ao padrão, o programa só avisa <strong>Já está igual ao padrão do programa.</strong></p>
+      <div class="aviso aviso--atencao">
+        <span class="aviso__titulo">Atenção</span>
+        <p>Restaurar o padrão troca o texto inteiro. As suas personalizações saem do documento e ficam só no arquivo <code>.bak</code>. Leia a comparação antes de confirmar.</p>
+      </div>
+
+      <h3>Novo documento e exclusão</h3>
+      <p>Clique em <strong>Novo documento</strong>, digite o nome (ele vira o nome do arquivo), marque os tipos de cerimônia e clique em <strong>Criar</strong>. O editor abre com o documento novo.</p>
+      <p>O botão <strong>Excluir</strong> só aparece para documentos que não entram em nenhum tipo de cerimônia. Para excluir um documento, primeiro tire-o de todos os tipos, em <strong>Entra em:</strong>, no editor.</p>
+      <div class="aviso aviso--cuidado">
+        <span class="aviso__titulo">Cuidado</span>
+        <p><strong>Excluir documento</strong> apaga o arquivo da pasta de trabalho e não tem como desfazer. Faça uma cópia de segurança antes, se tiver dúvida.</p>
+      </div>
+      <p>Mais abaixo, na mesma tela, o painel <strong>Cânone</strong> leva aos juramentos e às decisões. Veja a seção <a href="#canone">Cânone: juramentos e decisões</a>.</p>
+    </section>
+
+    <section id="canone" class="secao-manual" aria-labelledby="canone-titulo">
+      <h2 id="canone-titulo"><span class="num">12</span> Cânone: juramentos e decisões</h2>
+      <p>O cânone reúne os textos e as regras cerimoniais que todos os documentos seguem: os <strong>juramentos</strong> lidos no palco e as <strong>decisões</strong>, como quem confere o grau, quais hinos tocam e como se flexiona o gênero. Ele fica no painel <strong>Cânone</strong>, na tela <a href="#modelos">Modelos</a>.</p>
+      <figure class="captura">
+        <button class="captura__ampliar" type="button" aria-label="Ampliar: editor do juramento">
+          <img src="img/16-canone.png" alt="Editor do Juramento IFSul (institucional) com o aviso amarelo, o campo do nome, os interruptores dos tipos de cerimônia e a caixa Texto lido no palco com o texto do juramento" width="1280" height="800" loading="lazy">
+          <span class="marcador" style="--x:88.5%;--y:2.4%">1</span>
+          <span class="marcador" style="--x:78.1%;--y:16%">2</span>
+          <span class="marcador" style="--x:54.7%;--y:28.75%">3</span>
+          <span class="marcador" style="--x:44%;--y:34.1%">4</span>
+          <span class="marcador" style="--x:70.2%;--y:62.5%">5</span>
+        </button>
+        <figcaption>
+          <ol class="legenda">
+            <li><strong>Salvar</strong> — grava o juramento. O programa avisa <strong>Cânone salvo.</strong></li>
+            <li><strong>Aviso amarelo</strong> — lembra que o texto é lido em voz alta numa solenidade e só deve mudar com decisão do Gabinete.</li>
+            <li><strong>Nome do juramento</strong> — é o nome que aparece no campo <strong>Juramento</strong> da ficha.</li>
+            <li><strong>Usado por padrão nos tipos</strong> — os interruptores dizem em quais tipos de cerimônia este juramento vem escolhido.</li>
+            <li><strong>Texto lido no palco</strong> — o texto do juramento. Uma linha em branco separa parágrafos e <code>**assim**</code> fica em negrito.</li>
+          </ol>
+        </figcaption>
+      </figure>
+
+      <h3>Mudar um juramento ou uma decisão</h3>
+      <ol class="passos">
+        <li><strong>Abra o texto</strong> Em <strong>Modelos</strong>, role até o painel <strong>Cânone</strong> e clique em <strong>Editar</strong> no juramento ou na decisão.</li>
+        <li><strong>Edite o texto</strong> Mude o que for preciso. Numa decisão, os campos são <strong>Decisão</strong>, <strong>Fórmula</strong> e <strong>Observação</strong>.</li>
+        <li><strong>Salve</strong> Clique em <strong>Salvar</strong> e use <strong>Voltar</strong> para retornar a <strong>Modelos</strong>.</li>
+      </ol>
+      <p>Para criar algo novo, use <strong>Novo juramento</strong> ou <strong>Nova decisão</strong>, logo abaixo da lista do respectivo grupo. Uma decisão nova pede um título, que o programa usa como nome dela. Cada tela tem também o botão <strong>Restaurar todos os juramentos ao padrão</strong> ou <strong>Restaurar todas as decisões ao padrão</strong>, que funciona como o <a href="#modelos">Restaurar padrão</a> dos modelos.</p>
+      <p>Algumas decisões têm tabelas e listas que o programa não edita na tela. Nesses casos, ele avisa quais campos ficam de fora.</p>
+      <div class="aviso aviso--cuidado">
+        <span class="aviso__titulo">Cuidado</span>
+        <p>Mexer no cânone muda os documentos gerados dali em diante, em todas as cerimônias. Para as que já estão em aberto, gere os documentos de novo. Os juramentos são lidos em voz alta: altere só com decisão do Gabinete.</p>
+      </div>
+    </section>
+
+    <section id="configuracoes" class="secao-manual" aria-labelledby="configuracoes-titulo">
+      <h2 id="configuracoes-titulo"><span class="num">13</span> Configurações e atualizações</h2>
+      <p>A tela <strong>Configurações</strong> mostra onde fica a sua pasta de trabalho, deixa você escolher se o programa busca atualizações sozinho e dá acesso ao registro de funcionamento.</p>
+      <figure class="captura">
+        <button class="captura__ampliar" type="button" aria-label="Ampliar: tela Configurações">
+          <img src="img/17-configuracoes.png" alt="Tela Configurações com os painéis Pasta de trabalho, com o caminho C:\Users\maria\Documents\Formaturas IFSul e os botões Abrir pasta e Trocar pasta, Atualizações, com o interruptor e o botão Verificar agora, e Sobre, com a versão 0.1.4 e o botão Abrir registro" width="1280" height="800" loading="lazy">
+          <span class="marcador" style="--x:50%;--y:19.25%">1</span>
+          <span class="marcador" style="--x:31%;--y:30%">2</span>
+          <span class="marcador" style="--x:42%;--y:30%">3</span>
+          <span class="marcador" style="--x:49.5%;--y:43.6%">4</span>
+          <span class="marcador" style="--x:33.4%;--y:51.3%">5</span>
+          <span class="marcador" style="--x:43.5%;--y:63.9%">6</span>
+          <span class="marcador" style="--x:37.6%;--y:74.4%">7</span>
+        </button>
+        <figcaption>
+          <ol class="legenda">
+            <li><strong>Pasta de trabalho</strong> — o endereço da pasta onde ficam formaturas, modelos, cânone e perfil.</li>
+            <li><strong>Abrir pasta</strong> — abre a pasta de trabalho no Windows.</li>
+            <li><strong>Trocar pasta…</strong> — aponta o programa para outra pasta de trabalho. Veja <a href="#arquivos">Seus arquivos e backup</a>.</li>
+            <li><strong>Verificar atualizações ao abrir o programa</strong> — liga ou desliga a busca automática por versão nova.</li>
+            <li><strong>Verificar agora</strong> — busca uma versão nova neste momento.</li>
+            <li><strong>Versão</strong> — o número da versão instalada, no painel <strong>Sobre</strong>.</li>
+            <li><strong>Abrir registro (app.log)</strong> — abre o arquivo que guarda o histórico de funcionamento do programa.</li>
+          </ol>
+        </figcaption>
+      </figure>
+      <p class="captura__nota">Nesta captura o interruptor aparece desligado só porque as telas do manual foram geradas assim. Ao instalar o programa, a verificação já vem ligada.</p>
+      <p>Ao mudar o interruptor, o programa mostra <strong>Preferência salva</strong>. Em <strong>Verificar agora</strong>, se você já está na versão mais nova, aparece <strong>Você já está na versão mais recente</strong>, seguido do número da versão.</p>
+
+      <h3>Quando sai uma versão nova</h3>
+      <p>Com a verificação ligada, o programa consulta a internet ao abrir. Se houver versão nova, aparece uma faixa azul no alto da janela:</p>
+      <div class="faixa-ilustracao" role="img" aria-label="Ilustração da faixa de atualização: Versão X.Y.Z disponível, com o link Ver o que mudou e os botões Atualizar e Ignorar">
+        <span class="faixa-ilustracao__texto"><strong>Versão X.Y.Z disponível.</strong> Primeira linha das notas da versão.</span>
+        <span class="faixa-ilustracao__link">Ver o que mudou</span>
+        <span class="faixa-ilustracao__botao faixa-ilustracao__botao--primario">Atualizar</span>
+        <span class="faixa-ilustracao__botao">Ignorar</span>
+      </div>
+      <p class="ilustracao-nota">Ilustração. No lugar de X.Y.Z aparece o número da versão nova.</p>
+      <ul>
+        <li><strong>Ver o que mudou</strong> abre no navegador a página da versão, com a lista de novidades.</li>
+        <li><strong>Ignorar</strong> esconde a faixa, e o programa deixa de anunciar essa versão ao abrir. Você ainda pode atualizar depois, com <strong>Verificar agora</strong>.</li>
+        <li><strong>Atualizar</strong> instala a versão nova.</li>
+      </ul>
+
+      <h3>O que acontece ao clicar em Atualizar</h3>
+      <ol class="passos">
+        <li><strong>O programa pergunta sobre o que não foi salvo</strong> Se a tela aberta tem mudanças sem salvar, aparece <strong>Alterações não salvas</strong>. Escolha o que fazer. Durante a atualização, o resto do programa fica travado.</li>
+        <li><strong>Baixa o instalador</strong> A faixa mostra <strong>Baixando a versão X.Y.Z…</strong>, com uma barra de andamento e o tamanho já baixado.</li>
+        <li><strong>Confere o arquivo</strong> O programa verifica se o instalador baixado é o mesmo que foi publicado. Se não for, ele descarta o arquivo e avisa.</li>
+        <li><strong>Instala</strong> A faixa mostra <strong>Instalando… o programa vai fechar e abrir de novo na versão nova.</strong> O instalador roda sozinho, sem perguntas.</li>
+        <li><strong>O programa reabre</strong> Ele volta já na versão nova.</li>
+      </ol>
+      <p>Se algo falhar, a faixa diz <strong>Não foi possível atualizar</strong>, com o motivo, e oferece <strong>Tentar de novo</strong> e <strong>Voltar</strong>.</p>
+      <div class="aviso aviso--dica">
+        <span class="aviso__titulo">Dica</span>
+        <p>Atualizar não mexe nos seus dados. Modelos, cânone, perfil do câmpus e cerimônias ficam como estão na pasta de trabalho. Se uma versão corrige o texto de um modelo, o seu modelo continua igual até você usar <a href="#modelos">Restaurar padrão</a>.</p>
+      </div>
+    </section>
+
+    <section id="arquivos" class="secao-manual" aria-labelledby="arquivos-titulo">
+      <h2 id="arquivos-titulo"><span class="num">14</span> Seus arquivos e backup</h2>
+      <p>Tudo o que é seu fica numa única pasta, a pasta de trabalho que você escolheu no <a href="#primeiro-uso">primeiro uso</a>. O endereço dela aparece em <a href="#configuracoes">Configurações</a>, e o botão <strong>Abrir pasta</strong> a abre no Windows.</p>
+      <p class="arvore-dica">No celular, deslize a caixa para o lado para ver as explicações.</p>
+      <pre class="arvore" aria-label="Árvore da pasta de trabalho">Formaturas IFSul\               a pasta de trabalho
+├─ perfil.json                  perfil do câmpus (Meu câmpus)
+├─ app.log                      registro de funcionamento
+├─ formaturas\
+│  ├─ 12.12.26-TMSI-Auditorio\  uma pasta por cerimônia aberta (a ficha)
+│  └─ arquivo\                  cerimônias arquivadas
+├─ saida\
+│  ├─ 12.12.26-TMSI-Auditorio\  PDF e DOCX exportados
+│  └─ arquivo\                  documentos das cerimônias arquivadas
+├─ docsModels\                  modelos dos documentos
+├─ canon\                       juramentos e decisões
+└─ marca\                       brasão e logos, com o logo do câmpus</pre>
+      <p>Arquivos com a terminação <code>.bak</code> são cópias que o programa faz antes de substituir algo, como ao restaurar um modelo ou trocar o logo.</p>
+      <p>As preferências do computador (qual é a pasta de trabalho e se o programa busca atualizações) ficam fora dessa pasta, num arquivo do seu usuário no Windows. O caminho dele aparece no painel <strong>Sobre</strong>, em <a href="#configuracoes">Configurações</a>.</p>
+
+      <h3>Cópia de segurança</h3>
+      <p>Copiar a pasta de trabalho é o backup. Ela guarda tudo: perfil, modelos, cânone, cerimônias e documentos.</p>
+      <ol class="passos">
+        <li><strong>Feche o programa</strong> Assim nenhum arquivo está sendo gravado durante a cópia.</li>
+        <li><strong>Copie a pasta inteira</strong> No Explorador de Arquivos, copie a pasta de trabalho para um pendrive ou para uma unidade de rede.</li>
+        <li><strong>Guarde com a data</strong> Dê à cópia um nome com a data. Repita depois de cada cerimônia.</li>
+      </ol>
+
+      <h3>Trocar de computador</h3>
+      <ol class="passos">
+        <li><strong>Copie a pasta de trabalho</strong> Faça a cópia de segurança, com o programa fechado.</li>
+        <li><strong>Instale o programa no computador novo</strong> Siga a seção <a href="#instalar">Instalar no Windows</a>.</li>
+        <li><strong>Copie a pasta para o computador novo</strong> Por exemplo, para a pasta Documentos.</li>
+        <li><strong>Aponte o programa para ela</strong> Na tela <strong>Bem-vindo ao Formatura IFSul</strong>, digite o endereço da pasta ou clique em <strong>Procurar…</strong>, escolha a pasta copiada e clique em <strong>Continuar</strong>. Como ela já foi usada pelo programa, abre direto, sem pedir o perfil de novo.</li>
+      </ol>
+      <p>Para trocar a pasta depois, em qualquer momento, use <strong>Trocar pasta…</strong> em <strong>Configurações</strong>.</p>
+      <div class="aviso aviso--atencao">
+        <span class="aviso__titulo">Atenção</span>
+        <p>Não escolha uma pasta vazia achando que vai encontrar o seu trabalho. Pasta vazia vira uma pasta de trabalho nova, sem as suas formaturas. As antigas continuam no lugar onde estavam.</p>
+      </div>
+    </section>
+
+    <section id="desinstalar" class="secao-manual" aria-labelledby="desinstalar-titulo">
+      <h2 id="desinstalar-titulo"><span class="num">15</span> Desinstalar</h2>
+      <ol class="passos">
+        <li><strong>Feche o programa</strong> Se ele estiver aberto, feche a janela.</li>
+        <li><strong>Abra as Configurações do Windows</strong> No Menu Iniciar, clique em <strong>Configurações</strong> e depois em <strong>Aplicativos</strong>.</li>
+        <li><strong>Encontre o programa</strong> Procure <strong>Formatura IFSul</strong> na lista de aplicativos instalados.</li>
+        <li><strong>Desinstale</strong> Clique em <strong>Desinstalar</strong> e confirme.</li>
+      </ol>
+      <div class="aviso aviso--dica">
+        <span class="aviso__titulo">Dica</span>
+        <p>A desinstalação remove só o programa. A sua pasta de trabalho, com as formaturas, os modelos e o perfil, continua no computador. Se instalar o programa de novo, aponte para essa pasta no primeiro uso.</p>
+      </div>
+      <p>Se você quiser apagar também os dados, apague a pasta de trabalho à mão, no Explorador de Arquivos. Faça antes uma <a href="#arquivos">cópia de segurança</a>, se for precisar deles.</p>
+    </section>
+
+    <section id="duvidas" class="secao-manual" aria-labelledby="duvidas-titulo">
+      <h2 id="duvidas-titulo"><span class="num">16</span> Dúvidas frequentes</h2>
+
+      <details class="faq">
+        <summary>O Windows diz que o arquivo pode ser perigoso</summary>
+        <p>É esperado. O instalador ainda não tem assinatura digital, e por isso o Windows desconfia. Se você baixou do endereço oficial, clique em <strong>Mais informações</strong> e depois em <strong>Executar assim mesmo</strong>. Veja a seção <a href="#instalar">Instalar no Windows</a>.</p>
+      </details>
+
+      <details class="faq">
+        <summary>O programa diz que a pasta de trabalho não está acessível</summary>
+        <p>Aparece a tela <strong>A pasta de trabalho não abriu</strong>, com a mensagem <em>A pasta de trabalho … não está acessível agora (unidade de rede fora? pasta movida?)</em>. Isso quer dizer que o programa não encontrou a pasta onde ela estava.</p>
+        <ol>
+          <li>Se a pasta fica numa unidade de rede, reconecte a unidade (ou a VPN) e clique em <strong>Tentar de novo</strong>.</li>
+          <li>Se a pasta foi movida ou renomeada, veja no Explorador de Arquivos onde ela está agora.</li>
+          <li>Clique em <strong>Escolher outra pasta</strong> e aponte para a pasta certa, a que contém o arquivo <code>perfil.json</code>.</li>
+        </ol>
+        <p>Cuidado: escolher uma pasta vazia cria uma pasta de trabalho nova, sem as suas formaturas. Se a mensagem disser que a pasta <strong>não tem perfil.json</strong>, ela não é mais uma pasta de trabalho do programa: aponte para a pasta certa. Veja também <a href="#arquivos">Seus arquivos e backup</a>.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Um documento saiu com ⟨FALTA⟩</summary>
+        <p>O programa não achou um dado para aquele trecho. Quase sempre é um campo da ficha que ficou em branco. Abra a aba <strong>Documentos</strong>, use <strong>Pré-visualizar</strong> para ver onde está o <strong>⟨FALTA⟩</strong>, preencha o campo na ficha e gere de novo.</p>
+        <p>Se o campo já está preenchido, o modelo pode estar usando uma variável que não existe. Abra o modelo em <a href="#modelos">Modelos</a> e confira a pré-visualização: a etiqueta vermelha mostra quantos campos faltam.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Mudei a ficha e o documento não mudou</summary>
+        <p>Os documentos só mudam quando você gera de novo. Quando a ficha, um modelo ou o cânone mudam depois da última geração, os documentos ficam desatualizados e a aba <strong>Documentos</strong> mostra <strong>Documentos desatualizados em relação à ficha</strong>. Clique em <strong>Gerar documentos</strong> e, se precisar, exporte outra vez.</p>
+      </details>
+
+      <details class="faq">
+        <summary>O botão Arquivar está desativado</summary>
+        <p>O botão <strong>Arquivar formatura</strong> só funciona depois da data da cerimônia. Antes disso, o programa explica: <strong>Habilita quando a data da cerimônia já passou.</strong> Se a cerimônia já aconteceu, confira a data na aba <strong>Cerimônia</strong> da ficha. Veja a seção <a href="#arquivar">Arquivar</a>.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Colei do Excel e as colunas vieram trocadas</summary>
+        <p>Remova os formandos errados com o <strong>✕</strong> no fim de cada linha e cole de novo. Se a primeira linha da planilha não tiver títulos como <em>Nome</em>, abre a janela <strong>Mapear colunas</strong>: em cada coluna, escolha o que ela é. Uma coluna precisa ser o <strong>Nome</strong>. Veja a seção <a href="#formandos">Formandos</a>.</p>
+      </details>
+
+      <details class="faq">
+        <summary>O gênero de um formando está errado</summary>
+        <p>O programa sugere o gênero pelo prenome, e a sugestão pode errar. Clique em <strong>M</strong> ou <strong>F</strong> na linha do formando para corrigir. Depois, gere os documentos de novo.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Editei um modelo e quero voltar ao original</summary>
+        <p>Em <strong>Modelos</strong>, clique em <strong>Restaurar padrão</strong> no documento, confira a comparação e confirme com <strong>Restaurar</strong>. O texto de hoje fica guardado num arquivo <code>.bak</code> ao lado. Veja a seção <a href="#modelos">Modelos</a>.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Atualizei o programa e meus modelos continuam iguais</summary>
+        <p>É assim mesmo: a atualização não mexe nos seus modelos, para não apagar o que você personalizou. Se a versão nova corrigiu o texto de um modelo, abra o modelo em <strong>Modelos</strong>, clique em <strong>Restaurar padrão</strong>, leia a comparação e confirme. As suas alterações ficam no arquivo <code>.bak</code>. Depois, gere de novo os documentos das cerimônias em aberto.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Onde envio um problema</summary>
+        <p>Escreva para elderbernardi at ifsul.edu.br (troque o “at” pelo sinal de arroba). Conte o que você fazia e o que apareceu na tela, e anexe o arquivo <code>app.log</code>. Para chegar a ele, abra <strong>Configurações</strong> e clique em <strong>Abrir registro (app.log)</strong>. O arquivo fica na pasta de trabalho, ao lado de <code>perfil.json</code>.</p>
+      </details>
+    </section>
+  </main>
+</div>
+<a id="voltar-topo" class="voltar-topo" href="#conteudo">↑ Topo</a>
+<dialog id="ampliada" class="ampliada" aria-label="Tela ampliada"><button class="ampliada__fechar" type="button" aria-label="Fechar">✕</button><div class="ampliada__palco"></div><p class="ampliada__dica">Toque ou pressione Esc para fechar</p></dialog>
+<script src="manual.js"></script>
+</body>
+</html>

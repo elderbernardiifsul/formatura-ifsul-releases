@@ -1,0 +1,153 @@
+/* Manual do Formatura IFSul — mesmos tokens de app/ui/css/app.css; sem fontes nem scripts externos. */
+:root {
+  --verde: #006633; --verde-escuro: #004d26; --verde-claro: #e6f2ec; --verde-medio: #4c9a6e;
+  --vermelho: #ED1C24; --vermelho-claro: #fdeaea;
+  --azul: #0057B8; --azul-claro: #e8f0fb;
+  --amarelo: #b8860b; --amarelo-claro: #fff7d6;
+  --cinza-900: #2B2B2B; --cinza-600: #6B6B6B; --cinza-300: #cfd4d1; --cinza-100: #f3f5f4;
+  --lateral: 268px; --raio: 8px; --sombra: 0 1px 3px rgba(0,0,0,.12); --leitura: 780px;
+  --fonte: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 16px; }
+body { margin: 0; font: 16px/1.6 var(--fonte); color: var(--cinza-900); background: var(--cinza-100); }
+a { color: var(--azul); }
+:focus-visible { outline: 3px solid var(--verde-medio); outline-offset: 3px; }
+.lateral :focus-visible { outline-color: #fff; }
+.voltar-topo:focus-visible { outline-color: var(--verde-escuro); }
+h1, h2, h3, h4, p, ul, ol, figure { margin: 0; }
+p, ul, ol { margin-bottom: 14px; }
+ul, ol { padding-left: 22px; }
+li + li { margin-top: 4px; }
+
+.pular { position: absolute; left: -9999px; }
+.pular:focus { left: 16px; top: 16px; z-index: 10; background: #fff; padding: 8px 12px; border-radius: var(--raio); }
+
+/* casca: lateral verde igual à do app */
+.pagina { display: grid; grid-template-columns: var(--lateral) minmax(0, 1fr); min-height: 100vh; }
+.lateral { position: sticky; top: 0; height: 100vh; overflow-y: auto; background: var(--verde); color: #fff; padding: 22px 12px; display: flex; flex-direction: column; }
+.lateral__marca { padding: 0 12px 18px; }
+.lateral__titulo { display: block; font-size: 20px; font-weight: 700; letter-spacing: .3px; }
+.lateral__sub { display: block; font-size: 12px; opacity: .8; text-transform: uppercase; letter-spacing: 1.5px; }
+.sumario ol { list-style: none; margin: 0; padding: 0; }
+.sumario li + li { margin-top: 2px; }
+.sumario a { display: flex; gap: 10px; padding: 7px 12px; border-radius: var(--raio); color: #fff; text-decoration: none; font-size: 14px; line-height: 1.35; }
+.sumario a:hover { background: rgba(255,255,255,.12); }
+.sumario a[aria-current] { background: #fff; color: var(--verde); font-weight: 600; }
+.sumario .num { opacity: .75; font-variant-numeric: tabular-nums; min-width: 1.6em; }
+.lateral__rodape { margin-top: auto; padding: 18px 12px 0; font-size: 12px; opacity: .8; }
+
+.conteudo { padding: 40px 32px 96px; min-width: 0; }
+.conteudo > * { max-width: var(--leitura); margin-left: auto; margin-right: auto; }
+.capa__sobre { color: var(--verde); font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; font-size: 13px; margin-bottom: 4px; }
+.capa h1 { font-size: 34px; line-height: 1.2; margin-bottom: 10px; }
+.capa .sub { font-size: 18px; color: var(--cinza-600); }
+
+.secao-manual { margin-top: 64px; }
+.secao-manual > h2 { display: flex; align-items: baseline; gap: 12px; font-size: 26px; line-height: 1.25; border-bottom: 2px solid var(--verde-claro); padding-bottom: 8px; margin-bottom: 18px; }
+.secao-manual > h2 .num { color: var(--verde); font-size: 15px; font-weight: 700; letter-spacing: 1px; }
+.secao-manual h3 { font-size: 19px; margin: 30px 0 10px; }
+
+/* passos numerados */
+.passos { list-style: none; padding: 0; counter-reset: passo; }
+.passos > li { counter-increment: passo; position: relative; padding: 4px 0 14px 48px; margin: 0; }
+.passos > li::before { content: counter(passo); position: absolute; left: 0; top: 0; width: 32px; height: 32px; border-radius: 50%; background: var(--verde); color: #fff; font-weight: 700; display: grid; place-items: center; }
+.passos > li > strong:first-child { display: block; }
+
+/* caixas */
+.aviso { border-radius: 12px; padding: 14px 18px; margin: 18px 0; border-left: 4px solid; }
+.aviso > :last-child { margin-bottom: 0; }
+.aviso--dica { background: var(--verde-claro); border-color: var(--verde); }
+.aviso--atencao { background: var(--amarelo-claro); border-color: var(--amarelo); }
+.aviso--cuidado { background: var(--vermelho-claro); border-color: var(--vermelho); }
+.aviso__titulo { display: block; font-weight: 700; margin-bottom: 4px; }
+
+/* cartões e painéis */
+.cartoes { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin: 20px auto; }
+.cartao { background: #fff; border: 1px solid var(--cinza-300); border-radius: 12px; padding: 14px 16px; box-shadow: var(--sombra); color: inherit; text-decoration: none; display: flex; flex-direction: column; gap: 4px; }
+.cartao:hover { border-color: var(--verde); }
+.cartao__titulo { font-weight: 600; color: var(--verde); }
+.cartao__texto { font-size: 14px; color: var(--cinza-600); }
+.faz { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-bottom: 14px; }
+.painel { background: #fff; border: 1px solid var(--cinza-300); border-radius: 12px; padding: 16px 20px; box-shadow: var(--sombra); }
+.painel h3 { margin: 0 0 8px; font-size: 16px; color: var(--verde); }
+.painel > :last-child { margin-bottom: 0; }
+code { font-family: Consolas, "DejaVu Sans Mono", monospace; font-size: .9em; background: #fff; border: 1px solid var(--cinza-300); border-radius: 4px; padding: 1px 5px; overflow-wrap: anywhere; }
+kbd { font: 13px/1 var(--fonte); border: 1px solid var(--cinza-300); border-bottom-width: 2px; border-radius: 4px; padding: 2px 6px; background: #fff; }
+
+/* capturas com marcadores numerados */
+.captura { margin: 22px auto; }
+.captura__ampliar { display: block; position: relative; width: 100%; padding: 0; border: 1px solid var(--cinza-300); border-radius: 10px; overflow: hidden; background: #fff; cursor: zoom-in; box-shadow: var(--sombra); }
+.captura__ampliar img { display: block; width: 100%; height: auto; }
+.marcador { position: absolute; left: var(--x); top: var(--y); transform: translate(-50%, -50%); width: 28px; height: 28px; border-radius: 50%; background: #d4151c; color: #fff; font: 700 14px/28px var(--fonte); text-align: center; box-shadow: 0 0 0 3px #fff, 0 2px 6px rgba(0,0,0,.3); }
+.legenda { list-style: none; padding: 0; margin: 12px 0 0; counter-reset: leg; }
+.legenda li { counter-increment: leg; position: relative; padding-left: 36px; margin: 0 0 8px; }
+.legenda li::before { content: counter(leg); position: absolute; left: 0; top: 1px; width: 24px; height: 24px; border-radius: 50%; background: #d4151c; color: #fff; font-weight: 700; font-size: 13px; display: grid; place-items: center; }
+.captura__nota { font-size: 13px; color: var(--cinza-600); margin-top: 6px; }
+.ampliada { border: 0; padding: 0; background: transparent; max-width: 96vw; max-height: 96vh; cursor: zoom-out; overflow: auto; }
+.ampliada__fechar { position: sticky; top: 0; float: right; z-index: 2; width: 36px; height: 36px; margin: 0 0 -36px; border: 0; border-radius: 50%; background: #fff; color: var(--cinza-900); font-size: 18px; line-height: 36px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,.4); }
+.ampliada__dica { margin: 8px 0 0; text-align: center; color: #fff; font-size: 13px; }
+.ampliada::backdrop { background: rgba(0,0,0,.75); }
+.ampliada__palco { position: relative; }
+.ampliada__palco img { display: block; max-width: 96vw; max-height: calc(96vh - 40px); width: auto; height: auto; }
+
+/* dúvidas */
+details.faq { background: #fff; border: 1px solid var(--cinza-300); border-radius: 10px; padding: 12px 16px; margin-bottom: 10px; }
+details.faq summary { font-weight: 600; cursor: pointer; }
+details.faq[open] summary { margin-bottom: 8px; color: var(--verde); }
+details.faq > :last-child { margin-bottom: 0; }
+.arvore-dica { display: none; font-size: 13px; color: var(--cinza-600); margin-bottom: 4px; }
+
+.voltar-topo { position: fixed; right: 20px; bottom: 20px; opacity: 0; pointer-events: none; transition: opacity .2s; background: var(--verde); color: #fff; border-radius: 999px; padding: 10px 16px; text-decoration: none; font-weight: 600; box-shadow: var(--sombra); }
+.voltar-topo.visivel { opacity: 1; pointer-events: auto; }
+
+/* ilustrações das telas do Windows (não são capturas) */
+.janela-win { max-width: 520px; margin: 18px auto; border: 1px solid #c8c8c8; border-radius: 8px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,.18); overflow: hidden; font-family: "Segoe UI", system-ui, sans-serif; }
+.janela-win__barra { display: flex; justify-content: space-between; padding: 8px 12px; font-size: 12px; color: #444; background: #f3f3f3; border-bottom: 1px solid #e0e0e0; }
+.janela-win__corpo { padding: 18px 22px; font-size: 14px; }
+.janela-win__corpo h4 { font-size: 20px; font-weight: 400; margin-bottom: 10px; }
+.janela-win__rodape { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 8px; padding: 12px 22px; background: #f3f3f3; }
+.janela-win--smartscreen { background: #0067b8; color: #fff; border-color: #0067b8; }
+.janela-win--smartscreen .janela-win__rodape { background: transparent; }
+.janela-win--smartscreen a { color: #fff; }
+.botao-win { border: 1px solid #adadad; background: #fdfdfd; color: #1b1b1b; padding: 5px 18px; border-radius: 4px; font: 13px var(--fonte); }
+.botao-win--primario { background: #0067b8; border-color: #0067b8; color: #fff; }
+.realce { outline: 3px solid var(--amarelo); outline-offset: 3px; border-radius: 4px; }
+.ilustracao-nota { text-align: center; font-size: 13px; color: var(--cinza-600); }
+
+/* faixa de atualização do app (ilustração) e árvore da pasta de trabalho */
+.faixa-ilustracao { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 18px 0 6px; padding: 12px 16px; background: var(--azul-claro); border-bottom: 1px solid var(--azul); font-size: 14px; }
+.faixa-ilustracao__texto { flex: 1 1 240px; }
+.faixa-ilustracao__link { color: var(--azul); text-decoration: underline; font-size: 13px; }
+.faixa-ilustracao__botao { padding: 4px 8px; font-size: 13px; border: 1px solid var(--cinza-300); border-radius: var(--raio); background: #fff; }
+.faixa-ilustracao__botao--primario { background: var(--verde); border-color: var(--verde); color: #fff; font-weight: 600; }
+.arvore { margin: 14px 0; padding: 14px 18px; overflow-x: auto; background: #fff; border: 1px solid var(--cinza-300); border-radius: 12px; font: 13.5px/1.55 Consolas, "DejaVu Sans Mono", monospace; }
+
+@media (max-width: 800px) {
+  .pagina { display: block; }
+  .lateral { position: static; height: auto; padding: 16px 8px; }
+  .lateral__rodape { padding-top: 10px; }
+  .conteudo { padding: 24px 16px 72px; }
+  .capa h1 { font-size: 28px; }
+  .secao-manual > h2 { font-size: 22px; }
+  .marcador { width: 18px; height: 18px; font-size: 11px; line-height: 18px; box-shadow: 0 0 0 2px #fff; }
+  .ampliada__palco { width: 900px; }
+  .ampliada__palco img { width: 900px; max-width: none; max-height: none; }
+  .sumario a { padding: 5px 12px; }
+  .arvore-dica { display: block; }
+  .arvore { font-size: 12px; }
+  .voltar-topo { padding: 8px 14px; }
+}
+
+@media print {
+  .lateral, .voltar-topo, .pular { display: none; }
+  .pagina { display: block; }
+  body { background: #fff; font-size: 14px; }
+  .secao-manual { break-before: page; }
+  .secao-manual:first-of-type { break-before: auto; margin-top: 20px; }
+  .conteudo { padding: 0; }
+  .captura, .aviso, .painel, .janela-win, .passos > li, details.faq { break-inside: avoid; }
+  .cartoes, .faz { break-inside: avoid; }
+  .arvore-dica { display: none; }
+  .captura__ampliar { box-shadow: none; }
+}
